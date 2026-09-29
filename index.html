@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OEP-Check – Selbsteinschätzung Open Educational Practices</title>
+  <link rel="stylesheet" href="src/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>OEP-Check</h1>
+      <p class="subtitle">
+        Selbsteinschätzung der Offenheit Ihrer Bildungspraxis – basierend auf
+        dem Raster „OEP Dimensionen &amp; Kriterien" (OER-Beirat, AG OEP, Stand 25.04.2026).
+      </p>
+    </div>
+  </header>
+
+  <main class="container layout">
+    <section class="inputs" aria-label="Eingabe der Dimensionen">
+      <div class="toolbar">
+        <button type="button" id="reset-btn">Zurücksetzen</button>
+        <button type="button" data-preset="frontal">Beispiel: klassischer Kurs</button>
+        <button type="button" data-preset="offen">Beispiel: stark offene Praxis</button>
+        <button type="button" data-preset="misch">Beispiel: Mischform</button>
+      </div>
+      <div id="bausteine"></div>
+    </section>
+
+    <aside class="visualization" aria-label="Radar-Visualisierung">
+      <div class="viz-sticky">
+        <div class="viz-controls">
+          <label>
+            <input type="radio" name="viz-mode" value="8" checked />
+            8 Bausteine
+          </label>
+          <label>
+            <input type="radio" name="viz-mode" value="22" />
+            Alle Dimensionen
+          </label>
+        </div>
+        <div id="radar-container"></div>
+        <div class="profile-card" id="profile-card"></div>
+        <div class="export-row">
+          <button type="button" id="copy-link-btn">Link kopieren</button>
+          <button type="button" id="export-png-btn">PNG exportieren</button>
+          <button type="button" id="export-json-btn">JSON exportieren</button>
+        </div>
+        <p class="disclaimer">
+          Hinweis: „weniger offen" ist nicht „schlechter". Geringere Offenheit
+          kann begründet sein (Datenschutz, Zielgruppe). Das Tool dient der
+          Reflexion, nicht der Bewertung.
+        </p>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        Quelle des Rasters: OER-Beirat, AG OEP, Stand 25.04.2026.
+        Tool als Prototyp – keine Datenübertragung, kein Tracking, alle Werte bleiben im Browser bzw. in der URL.
+      </p>
+    </div>
+  </footer>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

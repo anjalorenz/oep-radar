@@ -1,0 +1,259 @@
+{
+  "version": "2026-04-25",
+  "source": "OER-Beirat, AG OEP",
+  "bausteine": [
+    {
+      "id": "materialien",
+      "title": "Offenheit der Materialien",
+      "dimensions": [
+        {
+          "id": "lizenzierung",
+          "label": "Lizenzierung",
+          "type": "slider",
+          "left": "proprietär",
+          "right": "offen lizenziert (OER)"
+        },
+        {
+          "id": "zugang_materialien",
+          "label": "Zugang",
+          "type": "slider",
+          "left": "nur intern",
+          "right": "öffentlich zugänglich"
+        },
+        {
+          "id": "nutzung",
+          "label": "Nutzung",
+          "type": "multi",
+          "left": "Nutzung ohne Veränderung",
+          "right": "Adaptation, Remix, Weiterentwicklung",
+          "options": [
+            { "id": "adaptation", "label": "Adaptation" },
+            { "id": "remix", "label": "Remix" },
+            { "id": "weiterentwicklung", "label": "Weiterentwicklung" }
+          ]
+        },
+        {
+          "id": "weitergabe",
+          "label": "Weitergabe",
+          "type": "slider",
+          "left": "bleibt im Kurs",
+          "right": "Veröffentlichung als OER",
+          "subMulti": {
+            "id": "veroeffentlichungsorte",
+            "label": "Veröffentlichungsorte (Mehrfachauswahl)",
+            "options": [
+              { "id": "repo", "label": "OER-Repositorium" },
+              { "id": "lms", "label": "Lernplattform / LMS" },
+              { "id": "homepage", "label": "Eigene Homepage" },
+              { "id": "spotify", "label": "Spotify & Co. (Audio)" },
+              { "id": "video", "label": "YouTube / Vimeo" },
+              { "id": "social", "label": "Soziale Medien" },
+              { "id": "github", "label": "GitHub / GitLab" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "kollaboration",
+      "title": "Kollaboration & Partizipation",
+      "dimensions": [
+        {
+          "id": "urheberschaft",
+          "label": "Urheberschaft",
+          "type": "slider",
+          "left": "Einzelautor:in",
+          "right": "kollaborative Erstellung"
+        },
+        {
+          "id": "beteiligte",
+          "label": "Beteiligte",
+          "type": "multi",
+          "left": "nur Lehrende",
+          "right": "Lehrende + Lernende + Community",
+          "options": [
+            { "id": "lehrende", "label": "Lehrende" },
+            { "id": "lernende", "label": "Lernende" },
+            { "id": "community", "label": "Community" }
+          ]
+        },
+        {
+          "id": "zusammenarbeit",
+          "label": "Zusammenarbeit",
+          "type": "slider",
+          "left": "isolierte Erstellung",
+          "right": "vernetzte Co-Creation"
+        },
+        {
+          "id": "rolle_lernender",
+          "label": "Rolle der Lernenden",
+          "type": "slider",
+          "left": "Konsumierende",
+          "right": "aktive Gestalter:innen"
+        },
+        {
+          "id": "curriculum",
+          "label": "Curriculumgestaltung",
+          "type": "slider",
+          "left": "Lehrende definieren Inhalte",
+          "right": "Co-Design von Lernenden"
+        },
+        {
+          "id": "entscheidung",
+          "label": "Entscheidungsprozesse",
+          "type": "slider",
+          "left": "hierarchisch",
+          "right": "partizipativ"
+        }
+      ]
+    },
+    {
+      "id": "didaktik",
+      "title": "Didaktik",
+      "dimensions": [
+        {
+          "id": "lernorganisation",
+          "label": "Lernorganisation",
+          "type": "slider",
+          "left": "vorgegeben (lehrerzentriert)",
+          "right": "selbstorganisiert (lernendenzentriert)"
+        },
+        {
+          "id": "lernpfade",
+          "label": "Lernpfade",
+          "type": "slider",
+          "left": "standardisiert",
+          "right": "individuell / flexibel"
+        }
+      ]
+    },
+    {
+      "id": "transparenz",
+      "title": "Transparenz & Teilen",
+      "dimensions": [
+        {
+          "id": "sichtbarkeit",
+          "label": "Sichtbarkeit des Lernprozesses",
+          "type": "slider",
+          "left": "intern",
+          "right": "offen dokumentiert"
+        },
+        {
+          "id": "reflexion",
+          "label": "Reflexion",
+          "type": "slider",
+          "left": "individuell",
+          "right": "gemeinschaftlich reflektiert"
+        },
+        {
+          "id": "feedback",
+          "label": "Feedbackkultur",
+          "type": "slider",
+          "left": "summativ",
+          "right": "dialogisch / kontinuierlich"
+        }
+      ]
+    },
+    {
+      "id": "inklusion",
+      "title": "Inklusion & Zugänglichkeit",
+      "dimensions": [
+        {
+          "id": "zugang_inklusion",
+          "label": "Zugang",
+          "type": "slider",
+          "left": "selektiv",
+          "right": "für alle zugänglich"
+        },
+        {
+          "id": "barrierefreiheit",
+          "label": "Barrierefreiheit",
+          "type": "slider",
+          "left": "nicht berücksichtigt",
+          "right": "systematisch integriert"
+        },
+        {
+          "id": "diversitaet",
+          "label": "Diversität",
+          "type": "slider",
+          "left": "standardisierte Inhalte",
+          "right": "anpassbar (unterschiedliche Bedürfnisse)"
+        }
+      ]
+    },
+    {
+      "id": "vernetzung",
+      "title": "Vernetzung & institutionelle Öffnung",
+      "dimensions": [
+        {
+          "id": "kooperation",
+          "label": "Kooperation",
+          "type": "slider",
+          "left": "innerhalb einer Institution",
+          "right": "institutionsübergreifend"
+        },
+        {
+          "id": "akteure",
+          "label": "Beteiligte Akteure",
+          "type": "multi",
+          "left": "Lehrende / Lernende",
+          "right": "Community, Praxispartner etc.",
+          "options": [
+            { "id": "lehrende", "label": "Lehrende" },
+            { "id": "lernende", "label": "Lernende" },
+            { "id": "community", "label": "Community" },
+            { "id": "praxispartner", "label": "Praxispartner" },
+            { "id": "andere_inst", "label": "Andere Institutionen" }
+          ]
+        },
+        {
+          "id": "lernorte",
+          "label": "Lernorte",
+          "type": "multi",
+          "left": "ein Lernort",
+          "right": "lernortübergreifend",
+          "options": [
+            { "id": "praesenz", "label": "Präsenz / Seminarraum" },
+            { "id": "online", "label": "Online / Virtuell" },
+            { "id": "hybrid", "label": "Hybrid" },
+            { "id": "praxis", "label": "Praxisort / Werkstatt" },
+            { "id": "extern", "label": "Außerschulisch / Extern" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "infrastruktur",
+      "title": "Offenheit der Infrastruktur",
+      "dimensions": [
+        {
+          "id": "technologien",
+          "label": "Technologien (Digitale Souveränität)",
+          "type": "slider",
+          "left": "proprietäre Systeme",
+          "right": "offene Standards / Open Source"
+        }
+      ]
+    },
+    {
+      "id": "innovation",
+      "title": "Innovation",
+      "dimensions": [
+        {
+          "id": "innovationsgrad",
+          "label": "Innovationsgrad",
+          "type": "slider",
+          "left": "etablierte Formate",
+          "right": "experimentelle Formate"
+        },
+        {
+          "id": "weiterentwicklung",
+          "label": "Weiterentwicklung",
+          "type": "slider",
+          "left": "statische Praxis",
+          "right": "iterative Weiterentwicklung"
+        }
+      ]
+    }
+  ]
+}
